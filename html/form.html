@@ -13,48 +13,75 @@
 </head>
 
 <body>
-
-    <!--Inicia menu-->
-    <nav class="nav-wrapper">
-        <div class="container">
-            <a href="#" class="brand-logo">Empresa X</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <a href="#" data-target="responsive-menu" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-        </div>
-    </nav>
-    <ul id="responsive-menu" class="sidenav">
+    <div class="navbar-fixed">
+        <nav class=" purple lighten-3">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Alexa 5</a>
+                <a href="#" data-target="burger-menu" class="sidenav-trigger">
+                    <i class="material-icons">menu</i></a>      
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li>
+                        <a href="#" class="dropdown-trigger" data-target="dropdown1">
+                            Productos
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+       
+    </div>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Producto 1</a></li>
+        <li><a href="#!">producto 2</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!">Producto 3</a></li>
+        <li><a href="#!">Producto 4</a></li>
+        <li><a href="#!">Producto 5</a></li>
+    </ul>
+    <ul class="sidenav" id="burger-menu">
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Productos</a></li>
+        <li><a href="#">Blog</a></li>
         <li><a href="#">Contacto</a></li>
     </ul>
-    <!--Finaliza menu-->
-
-    <h1 class="white-text center">Formulario de contacto</h1>
 
 
+<div class="section container">
+    <form class="col s12">
+        <div class="row card-panel">
+
+            <div class="input-field col s6">
+                <input type="text"  id="nombre" class="validate" required>
+                <label for="nombre">Nombre:</label>
+            </div>
+            <div class="input-field col s6">
+                <input type="text"  id="apellido" class="validate" required>
+                <label for="apellido">Apellido:</label>
+            </div>
+            <div class="input-field col s6">
+                <input type="number"  id="telefono" class="validate" required>
+                <label for="telefono">Telefono:</label>
+            </div>
+            <div class="input-field col s6">
+                <input type="email"  id="email"class="validate" required>
+                <label for="email">Email:</label>
+            </div>
+
+            <button class="btn purple lighten-3" type="submit">Enviar</button>
+
+
+        </div>
+    </form>
+</div>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-    </div>
 
 
 
